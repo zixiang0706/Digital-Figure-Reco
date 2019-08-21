@@ -2,11 +2,13 @@
 
 # Form implementation generated from reading ui file 'mainUI.ui'
 #
-# Created by: PyQt5 UI code generator 5.9.2
+# Created by: PyQt5 UI code generator 5.13.0
 #
 # WARNING! All changes made in this file will be lost!
 
+
 from PyQt5 import QtCore, QtGui, QtWidgets
+
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -374,7 +376,7 @@ class Ui_MainWindow(object):
         self.menuSetting.setTitle(_translate("MainWindow", "Functions"))
         self.menuHelp.setTitle(_translate("MainWindow", "Help"))
         self.actionConfigure.setText(_translate("MainWindow", "Configure"))
-        self.actionSave_Image.setText(_translate("MainWindow", "Save sectional Image"))
+        self.actionSave_Image.setText(_translate("MainWindow", "Save Window image"))
         self.actionExit.setText(_translate("MainWindow", "Exit"))
         self.actionExit_2.setText(_translate("MainWindow", "Exit"))
         self.actionAbout_this.setText(_translate("MainWindow", "About this"))
@@ -390,4 +392,3 @@ class Ui_MainWindow(object):
         self.actionConnect_TaTu.setText(_translate("MainWindow", "Connect TaTu"))
         self.actioncollect_images.setText(_translate("MainWindow", "Collect images"))
         self.actionMerge_images.setText(_translate("MainWindow", "Merge images"))
-

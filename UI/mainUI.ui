@@ -680,7 +680,7 @@
   </action>
   <action name="actionSave_Image">
    <property name="text">
-    <string>Save sectional Image</string>
+    <string>Save Window image</string>
    </property>
   </action>
   <action name="actionExit">

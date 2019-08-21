@@ -1,0 +1,1 @@
+this file is the snapshot of the window

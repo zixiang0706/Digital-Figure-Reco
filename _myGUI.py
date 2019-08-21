@@ -77,7 +77,7 @@ class MyWindow(QMainWindow, Ui_MainWindow):
         self.actionOpen_Log.triggered.connect(self.diaglog_open_log)
         self.actionExit.triggered.connect(self.close)
         self.actionExit.setShortcut("Ctrl+Q")
-        self.actionSave_Image.triggered.connect(self.snapshoot)
+        self.actionSave_Image.triggered.connect(self.snapshot)
         self.actionSave_Image.setShortcut("Ctrl+S")
         self.actionSave_Log.triggered.connect(self.diaglog_save_log)
         self.actionConfigure.triggered.connect(
@@ -175,14 +175,14 @@ class MyWindow(QMainWindow, Ui_MainWindow):
             with open(fname[0] + fname[1], 'w') as f:
                 f.write(self.textBrowser.toPlainText())
 
-    def snapshoot(self):
+    def snapshot(self):
         """
-        save the snapshoot
+        save the snapshot
         :return:
         """
         pqscreen = QGuiApplication.primaryScreen()
         pixmap2 = pqscreen.grabWindow(self.frame.winId())
-        name = "./output/snapshoot/" + time.ctime().replace(":", ".") + '.png'
+        name = "./output/snapshot/" + time.ctime().replace(":", ".") + '.png'
         pixmap2.save(name)
         QMessageBox.information(self, 'Message', "Image saved in path: " + name)
 

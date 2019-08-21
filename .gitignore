@@ -1,5 +1,7 @@
 .idea/*
 .idea/
+output/log/*.txt
+output/snapshot/*.png
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
